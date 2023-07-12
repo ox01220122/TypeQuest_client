@@ -139,7 +139,7 @@ const MyPage = () => {
                                     )}
                                 </Typography>
                             </Grid>
-                            <Grid item>
+                            {/* <Grid item>
                                 {isEditing ? (
                                     <Button variant="contained" color="primary" onClick={handleSaveChanges}>
                                         저장
@@ -149,7 +149,7 @@ const MyPage = () => {
                                         프로필 편집
                                     </Button>
                                 )}
-                            </Grid>
+                            </Grid> */}
                         </Grid>
 
                         <Box mt={3}>
