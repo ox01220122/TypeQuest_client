@@ -1,66 +1,65 @@
 {
-    "name": "client",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@emotion/react": "^11.11.1",
-        "@emotion/styled": "^11.11.0",
-        "@mui/icons-material": "^5.13.7",
-        "@mui/material": "^5.13.7",
-        "@mui/system": "^5.13.7",
-        "@testing-library/jest-dom": "^5.16.5",
-        "@testing-library/react": "^13.4.0",
-        "@testing-library/user-event": "^13.5.0",
-        "axios": "^1.4.0",
-        "kakao-sdk": "^3.1.0",
-        "node-sass": "^9.0.0",
-        "react": "^18.2.0",
-        "react-bootstrap": "^2.8.0",
-        "react-dom": "^18.2.0",
-        "react-hook-form": "^7.45.1",
-        "react-icons": "^4.10.1",
-        "react-kakao-link": "^0.1.2",
-        "react-material-ui-carousel": "^3.4.2",
-        "react-router-dom": "^6.14.1",
-        "react-scripts": "5.0.1",
-        "react-scroll-to-bottom": "^4.2.0",
-        "react-slick": "^0.29.0",
-        "react-transition-group": "^4.4.5",
-        "react-typewriter-effect": "^1.1.0",
-        "sass": "^1.63.6",
-        "sass-loader": "^13.3.2",
-        "slick-carousel": "^1.8.1",
-        "socket.io": "^4.7.1",
-        "socket.io-client": "^4.7.1",
-        "styled-components": "^6.0.3",
-        "uuid": "^9.0.0",
-        "web-vitals": "^2.1.4"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "babel-plugin-import": "^1.13.6"
-    }
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.13.7",
+    "@mui/material": "^5.13.7",
+    "@mui/system": "^5.13.7",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "node-sass": "^9.0.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.1",
+    "react-icons": "^4.10.1",
+    "react-kakao-link": "^0.1.2",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-router-dom": "^6.14.2-pre.0",
+    "react-scripts": "5.0.1",
+    "react-scroll-to-bottom": "^4.2.0",
+    "react-slick": "^0.29.0",
+    "react-transition-group": "^4.4.5",
+    "react-typewriter-effect": "^1.1.0",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "slick-carousel": "^1.8.1",
+    "socket.io": "^4.7.1",
+    "socket.io-client": "^4.7.1",
+    "styled-components": "^6.0.3",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.6"
+  }
 }
