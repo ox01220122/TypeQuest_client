@@ -209,11 +209,8 @@ function Chat({ username, room }) {
 
     useEffect(() => {
         socket.on('receive_message', (data) => {
-            // 현재 방에 속한 메시지만을 추가
             if (data.room === room) {
-                const messageListForRoom = getMessageListForRoom(room);
-                messageListForRoom.push(data);
-                setMessageList([...messageListForRoom]);
+                setMessageList((prevMessages) => [...prevMessages, data]); // 이전의 메시지 리스트에 새로운 메시지 추가
             }
         });
 
