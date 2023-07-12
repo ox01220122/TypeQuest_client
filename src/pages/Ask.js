@@ -32,6 +32,7 @@ function Ask() {
             .then(() => {
                 // 문의 등록 성공 시 새로운 문의를 목록에 추가
                 setInquiries([...inquiries, { ...newInquiry, showAdminMessage: false }]);
+                window.location.reload();
             })
             .catch((error) => {
                 console.error('문의 등록에 실패했습니다:', error);
