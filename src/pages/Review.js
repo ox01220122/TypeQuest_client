@@ -107,6 +107,12 @@ const BoardUserId = styled.div`
     font-weight: bolder;
 `;
 
+const BoardTestName = styled.div`
+    margin-top: 1vh;
+    color: rgba(50, 50, 160, 1);
+    font-weight: bolder;
+`;
+
 const BoardResult = styled.div`
     color: white;
 `;
@@ -210,6 +216,7 @@ const Review = () => {
                 <BoardWrapper>
                     {posts.map((post) => (
                         <ContainerBoard key={post.id}>
+                            <BoardTestName>{post.test_name}</BoardTestName>
                             <BoardTop>
                                 <BoardContent>{post.content}</BoardContent>
                             </BoardTop>
