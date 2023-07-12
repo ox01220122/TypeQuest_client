@@ -219,7 +219,7 @@ const Review = () => {
                             </BoardPhoto>
                             <BoardBottom>
                                 <BoardUserId>{post.user_id}</BoardUserId>
-                                {/* <BoardResult>{post.result}</BoardResult> */}
+                                <BoardResult>{post.result}</BoardResult>
                                 <BoardTime>
                                     {extractDate(post.created_at)} {formatTime(post.created_at)}
                                 </BoardTime>

@@ -35,7 +35,9 @@ function TravelResult() {
     useEffect(() => {
         // function for sending data
         const sendData = async () => {
-            const result = Mbti.find((data) => data.id === mbti.mbti)?.text || '';
+            const result = Mbti.find((data) => data.id === mbti.mbti)?.nickname || '';
+            console.log('result', result);
+
             const test_name = '여행Test'; // test name to send
             const user_id = sessionStorage.getItem('user_data'); // User ID stored in session
 
