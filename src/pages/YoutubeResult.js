@@ -33,7 +33,7 @@ function YoutubeResult() {
     useEffect(() => {
         // function for sending data
         const sendData = async () => {
-            const result = YMbti.find((data) => data.id === mbti.mbti)?.text || '';
+            const result = YMbti.find((data) => data.id === mbti.mbti)?.id || '';
             const test_name = '유튜버Test'; // test name to send
             const user_id = sessionStorage.getItem('user_data'); // User ID stored in session
 
