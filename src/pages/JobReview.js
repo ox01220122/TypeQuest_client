@@ -34,6 +34,7 @@ function JobReview({ mbtiResult, onClose }) {
         try {
             // send data to API
             const response = await axios.post(`${SERVER}/review`, dataToSend);
+            console.log('response', response);
 
             // Close the popup
             onClose();

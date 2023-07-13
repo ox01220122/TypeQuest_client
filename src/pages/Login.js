@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import { Wrapper, Inner } from './Main';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
 import axios from 'axios';

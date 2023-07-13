@@ -3,7 +3,7 @@ import { Wrapper, Inner } from './Main';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
 import axios from 'axios';
-import { redirect, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import MainHeader from './Header';
 import Footer from './Footer';
 import { SERVER } from '../lib/constant';
@@ -203,7 +203,7 @@ function Login() {
         register,
         watch,
         handleSubmit,
-        formState: { errors, setError },
+        formState: { errors },
     } = useForm();
     const navigate = useNavigate();
 

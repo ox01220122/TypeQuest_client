@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 
 const KakaoShareButton = () => {
     useEffect(() => {
-        window.Kakao.init('dbc26ec5c63bf136447323baac97f826');
         window.Kakao.Share.createDefaultButton({
             container: '#kakaotalk-sharing-btn',
             objectType: 'feed',

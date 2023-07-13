@@ -22,13 +22,6 @@ const Hamburger = styled.div`
     }
 `;
 
-const HamburgerLine = styled.div`
-    width: 100%;
-    height: 2px;
-    background-color: rgba(11, 31, 46, 1);
-    margin-bottom: 4px;
-`;
-
 const Header = styled.div`
     width: 100%;
     display: flex;
@@ -191,13 +184,6 @@ function MainHeader() {
         // 로고 클릭시 메인 페이지로 이동
         navigate('/');
     };
-
-    //로그인 시 이용할 수 있는 기능에 넣어놓기
-    function showAlert() {
-        if (!loggedIn) {
-            alert('로그인 후 이용가능합니다.');
-        }
-    }
 
     function checkLoggedIn() {
         let isLoggedIn = sessionStorage.getItem('user_data'); // 로그인 상태 확인
