@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import io from 'socket.io-client';
 import Chat from './Chat';
 import MainHeader from './Header';
-import Footer from './Footer';
 import { SERVER } from '../lib/constant';
 // 임시 소켓 주소
 const socket = io.connect(`${SERVER}`);
@@ -207,7 +206,7 @@ function ChatLogin() {
                     {test === '직업Test' && (
                         <select
                             value={room2}
-                            onChange={handleRoomChange2}
+                            onChange={handleRoomChange3}
                             style={{
                                 marginBottom: '10px',
                                 padding: '10px',

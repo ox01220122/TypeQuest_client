@@ -34,6 +34,7 @@ function CreateReview({ mbtiResult, onClose }) {
         try {
             // send data to API
             const response = await axios.post(`${SERVER}/review`, dataToSend);
+            console.log('response', response);
 
             // Close the popup
             onClose();
@@ -64,7 +65,9 @@ function CreateReview({ mbtiResult, onClose }) {
                         onChange={handleChange}
                         placeholder="내용"
                     />
-                    <button type="submit" className='submitReview'>리뷰 작성</button>
+                    <button type="submit" className="submitReview">
+                        리뷰 작성
+                    </button>
                 </form>
             </div>
         </div>

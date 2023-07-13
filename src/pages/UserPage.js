@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Avatar, Typography, Box, Button, Grid, Paper, TextField, ThemeProvider, createTheme } from '@mui/material';
+import { Avatar, Typography, Box, Grid, Paper, TextField, ThemeProvider, createTheme } from '@mui/material';
 import { styled } from '@mui/system';
 import MainHeader from './Header';
 import Footer from './Footer';
@@ -61,29 +61,12 @@ const MyPage = () => {
         fetchUsers();
     }, []);
 
-    const handleProfileEdit = () => {
-        setIsEditing(true);
-        setEditedUser(user);
-    };
-
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setEditedUser((prevUser) => ({
             ...prevUser,
             [name]: value,
         }));
-    };
-
-    const handleSaveChanges = () => {
-        setUser(editedUser);
-        setIsEditing(false);
-        try {
-            const response = axios.patch(`${SERVER}/user/${id}`, editedUser);
-            // 요청이 성공적으로 완료되었을 때의 처리 로직을 추가할 수 있습니다.
-        } catch (error) {
-            console.error(error);
-            // 요청이 실패했을 때의 처리 로직을 추가할 수 있습니다.
-        }
     };
 
     if (!user) {
