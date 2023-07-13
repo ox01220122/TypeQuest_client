@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import { Wrapper } from './Main';
+import { Inner, Wrapper } from './Main';
 import { RiChat1Line, RiUserLine, RiSettingsLine } from 'react-icons/ri';
 import TypingEffect from '../components/TypingEffect';
 import MainHeader from './Header';
@@ -134,40 +134,42 @@ function MbtiPage() {
     return (
         <>
             <StyleSheetManager shouldForwardProp={(prop) => prop !== 'responsive'}>
-                <MainHeader />
                 <Wrapper>
-                    <MbtiInner responsive={true}>
-                        <Heading responsive={true}>
-                            <TypingEffect text="안녕하세요 MBTI TEST PAGE입니다" speed={60} fontSize="4vw" />
-                        </Heading>
-                        <Image src={MbtiSrc} responsive={true} />
-                        <ButtonWrapper responsive={true}>
-                            <Link to="/TravelTest">
-                                <Button responsive={true}>
-                                    <RiChat1Line style={IconStyle} />
-                                    여행
-                                </Button>
-                            </Link>
-                        </ButtonWrapper>
-                        <ButtonWrapper responsive={true}>
-                            <Link to="/YoutubeTest">
-                                <Button responsive={true}>
-                                    <RiUserLine style={IconStyle} />
-                                    유튜브
-                                </Button>
-                            </Link>
-                        </ButtonWrapper>
-                        <ButtonWrapper responsive={true}>
-                            <Link to="/JobTest">
-                                <Button responsive={true}>
-                                    <RiSettingsLine style={IconStyle} />
-                                    직업
-                                </Button>
-                            </Link>
-                        </ButtonWrapper>
-                    </MbtiInner>
+                    <MainHeader />
+                    <Inner>
+                        <MbtiInner responsive={true}>
+                            <Heading responsive={true}>
+                                <TypingEffect text="안녕하세요 MBTI TEST PAGE입니다" speed={60} fontSize="4vw" />
+                            </Heading>
+                            <Image src={MbtiSrc} responsive={true} />
+                            <ButtonWrapper responsive={true}>
+                                <Link to="/TravelTest">
+                                    <Button responsive={true}>
+                                        <RiChat1Line style={IconStyle} />
+                                        여행
+                                    </Button>
+                                </Link>
+                            </ButtonWrapper>
+                            <ButtonWrapper responsive={true}>
+                                <Link to="/YoutubeTest">
+                                    <Button responsive={true}>
+                                        <RiUserLine style={IconStyle} />
+                                        유튜브
+                                    </Button>
+                                </Link>
+                            </ButtonWrapper>
+                            <ButtonWrapper responsive={true}>
+                                <Link to="/JobTest">
+                                    <Button responsive={true}>
+                                        <RiSettingsLine style={IconStyle} />
+                                        직업
+                                    </Button>
+                                </Link>
+                            </ButtonWrapper>
+                        </MbtiInner>
+                    </Inner>
+                    <Footer />
                 </Wrapper>
-                <Footer />
             </StyleSheetManager>
             {/* <Footer /> */}
         </>
