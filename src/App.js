@@ -22,6 +22,7 @@ import AdminPage from './pages/Adminpage';
 import AdminLogin from './pages/AdminLogin';
 
 function App() {
+    window.Kakao.init('dbc26ec5c63bf136447323baac97f826');
     return (
         <>
             <GlobalStyle />
